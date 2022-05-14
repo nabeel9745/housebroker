@@ -1,0 +1,29 @@
+/* p{
+    color: brown;
+    background-color: bisque;
+} */
+*{
+    background-color: forestgreen;
+    color: gold;
+}
+ 
+/* .june{
+    color: blueviolet;
+    background-color: aquamarine;
+} */
+
+#
+
+p,h1,h3{
+    color: black;
+    
+}
+input[type="text"]{
+    color: rgb(114, 114, 215);
+}
+input[type="password"]{
+    color: yellow;
+}
+p.oo{
+    color: brown;
+}
