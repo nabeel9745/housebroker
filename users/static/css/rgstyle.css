@@ -1,0 +1,78 @@
+body,
+html {
+    margin: 0%;
+    padding: 0%;
+}
+
+#master_div {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(82, 183, 174)
+}
+
+#logo_div {
+    width: 405px;
+    height: 80px;
+}
+
+#logo {
+    font-weight: bold;
+    color: white;
+    padding: 14px 166px;
+    font-size: 31px;
+    font-family: cursive;
+
+}
+
+#nav_id {
+    width: 100%;
+    min-width: 400px;
+    height: 87px;
+    background-color: #000000b5
+}
+
+#container {
+    display: flex;
+    max-height: 770px;
+    width: 100%;
+    background-color: #262633
+}
+
+#img_part {
+    background-color: red;
+    max-height: 610px;
+    max-width: 700px;
+    display: flex;
+    margin: 0%;
+    flex: 2;
+}
+
+#img {
+    height: auto;
+    min-height: 605px;
+    width: auto;
+}
+
+#second-class {
+    min-width: 463px;
+    height: 608px;
+    display: flex;
+    max-width: 560px;
+}
+
+#form-align {
+    margin-top: 62px;
+    margin-left: 95px;
+    min-width: 309px;
+}
+
+.first-name {}
+
+label {
+    color: aliceblue;
+}
+
+#btn {
+    margin-left: 97px;
+    border: 2px solid darkblue;
+}

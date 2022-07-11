@@ -1,12 +1,42 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static'css/intel.css'% }">
+    <style>
+    
+     div{ 
+        border-style:dashed;
+        border-right-color: blue;
+        border-top-color: aqua;
+        border-right-color: blue;
+        border-left-color: blanchedalmond;
+        border-style: dotted;
+        padding-left: 25px;
+        padding-top: 25px; 
+        min-height: 30px;
+        min-width: 20px;
+        max-width: 600px;
+        max-height: 550px;
+        padding: 10px;
+        overflow: scroll; 
+        
+     }
+
+    </style>
 </head>
-<body>
-    <p>welcome</p>
+ <body> 
+    <div>
+        <img id="pic"src="{% static 'images/DSC_1948.JPG' %}" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at modi vero nesciunt incidunt, temporibus iusto! Repellat ducimus cum minima autem nemo quo aspernatur? Qui architecto rem sit quas nisi.</p>
+        <p>welcome</p>
+        <h1>wiki</h1>
+    </div>
 </body>
+
 </html>

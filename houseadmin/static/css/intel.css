@@ -1,18 +1,7 @@
-/* p{
+p{
     color: brown;
     background-color: bisque;
-} */
-*{
-    background-color: forestgreen;
-    color: gold;
 }
- 
-/* .june{
-    color: blueviolet;
-    background-color: aquamarine;
-} */
-
-#
 
 p,h1,h3{
     color: black;
@@ -26,4 +15,9 @@ input[type="password"]{
 }
 p.oo{
     color: brown;
+} 
+ #pic{
+ background-image: url('../images/pic.jpg');
+ background-color: brown;
+
 }

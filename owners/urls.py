@@ -6,4 +6,5 @@ app_name='owners'
 urlpatterns=[
    path('hello',views.hello,name='hello'),
    path('contactadmin',views.contactadmin),
+   path('home',views.home),
 ]

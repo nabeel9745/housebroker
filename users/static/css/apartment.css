@@ -1,0 +1,94 @@
+#nav-div{
+    height: 214px;
+    width: 100%;
+    background-color: black;
+}
+
+#navbar{
+    background-color:rgb(79, 79, 98);
+    width: 100%;
+    height: 117px;
+   
+}
+#nav1{
+    background-color: rgb(79, 79, 98);
+    width: 50%;
+    height: 90px;
+    float: left;
+}
+#nav2{
+    background-color: rgb(79, 79, 98);
+    width: 50%;
+    height: 90px;
+    float: right;
+
+}
+#logo{
+    font-weight: bold;
+    color: white;
+    padding: 0px 166px;
+    font-size: 31px;
+    margin-top: 21px;
+    font-family: cursive;
+}
+#sign_btn{
+    margin-left: 418px;
+    color: #362f2f;
+    background: white;
+    margin-top: 22px;
+    border: none;
+    padding: 13px 46px;
+    font-weight: 900;
+    border-radius: 6px;
+}
+#secondmain_div{
+    background-color: rgb(79, 79, 98);
+    height: 96px;
+    width: 100%;
+}
+
+#text{
+    color: navajowhite;
+    margin-left: 31px;
+    font-weight: 400;
+}
+#searchbar{
+    margin-left: 269px;
+    margin-top: 1px;
+    width: 620px;
+}
+#btn_search{
+    background-color: white;
+    color: black;
+    width: 107px;
+}
+
+
+.container-fluid{
+    background-color: rgb(230, 233, 223);
+    height: 218px;
+    margin-top: 0%;
+    border: solid;
+}
+.img-box{
+    width: 248px;
+    background-color:rgb(230, 233, 223);
+    height: 212;
+    float: left;
+}
+.img1{
+    width: 246px;
+    height: 210px;
+}
+.location-details{
+    height: 110px;
+    width: 981px;
+    background-color:rgb(230, 233, 223);
+    float: right;
+}
+.more-details{
+    height: 100px;
+    width: 981px;
+    background-color:rgb(230, 233, 223);
+    float: right;
+}

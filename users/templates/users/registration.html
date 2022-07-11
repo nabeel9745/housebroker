@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/rgstyle.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="master_div">
+        <header id="nav_id">
+            <div id=" logo_div">
+                <p id="logo">House Broker</p>
+            </div>
+        </header>
+        <div id="container">
+            <div id="img_part">
+                <img id="img" src="{% static 'images/entre.jpg' %}" class="img-fluid" alt="...">
+            </div>
+            <div id="second-class">
+         
+          
+                <form id="form-align" action="">
+                    <div class="first-name">
+                        <label for="validationDefault01">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="first-name">
+                        <label for="validationDefault02">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" required>
+                    </div>
+                    <div class="first-name">
+                        <label for="validationDefault03">phone number</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="first-name">
+                        <label for="validationDefault03">Email address</label>
+                        <input type="email" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="first-name">
+                        <label for="validationDefault03">password</label>
+                        <input type="password" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="first-name">
+                        <label for="validationDefault03">confirm</label>
+                        <input type="password" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <br>
+                    <div>
+                        <button id="btn" class="btn btn-light" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
