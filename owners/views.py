@@ -10,3 +10,10 @@ def contactadmin (request):
 
 def home(request):
     return render(request,'owners/home.html')
+
+def addapart(request):
+    return render(request,'owners/addapart.html')
+
+def navbar(request):
+    return render(request,'owners/navbar.html')
+

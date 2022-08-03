@@ -13,3 +13,7 @@ def house(request):
 
 def controls(request):
      return render(request,'houseadmin/controls.html')       
+
+def adminhome(request):
+     return render(request,'houseadmin/adminhome.html')       
+

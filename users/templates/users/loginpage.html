@@ -19,21 +19,50 @@
     <div id="form-div">
         <form action="">
             <h6 class="text-design">Email Address or phone number</h6>
-            <input class="email" type="text">
-            <br><br><br>
-            <h6 class="text-design">password</h6>
-            <input class="email" type="password"><br>
-            <a id="forgot" href="">forgot password ?</a>
+            <input id="eml" class="email" type="text">
+            <p id="b1" style="color: red;"></p>
+            <!-- <br> -->
             <br>
-            <input id="button" type="button" value="sign In">
+            <h6 class="text-design">password</h6>
+            <input id="psd" class="email" type="password">
+            <p style="color: red;" id="b2"></p>
+            <!-- <br> -->
+            <a id="forgot" href="">forgot password ?</a>
+            <button onclick="return validation()" id="button" >sign In</button>
         </form>        
-<div>
 
-</div>
     </div>
-    <a id="already" href=""><h5>Already Have an account ?.</h5></a>
+    <br>
+    <a id="already" href="logincreation"><h5>Create a new account ?.</h5></a>
 
-    
+    <script>
+        function validation(){
+            status=1
+            email = document.getElementById("eml").value
+            console.log(email)
+            password = document.getElementById("psd").value
+           console.log(email)
+            if(email == ''){
+               document.getElementById("b1").innerHTML="please fill your email or phone number"
+             status = 0
+            }
+            else{
+                document.getElementById("b1").innerHTML=""
+
+            }
+
+            if(password == ''){
+               document.getElementById("b2").innerHTML="please fill your password"
+                status = 0
+            }
+            else{
+                document.getElementById("b2").innerHTML=""
+            }
+            if (status == 0){
+return false
+}
+        }
+    </script>
 </body>
 
 </html>

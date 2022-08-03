@@ -1,0 +1,65 @@
+#adding-bar{
+  padding-left: 93px;
+  background-color: #0d0b36e3;
+}
+
+#name-location{
+  width: 11rem;
+  text-align: center;
+  color: floralwhite;
+  border: 1px solid;
+  font-weight: 600;
+} 
+#name-location:hover{
+    background-color:black;
+  }
+ #setup{
+    width: 11rem;
+   text-align: center;
+   color: floralwhite;
+   border: 1px solid;
+   font-weight: 600;
+  }
+  #setup:hover{
+    background-color:black
+  }
+  #photos{
+    width: 9rem;
+    text-align: center;
+    color: floralwhite;
+    border: 1px solid;
+    font-weight: 600;
+  }
+  #photos:hover{
+    background-color: black
+  }
+  #pricing{
+    width: 11rem;
+    text-align: center; 
+    color: floralwhite;
+    border: 1px solid;
+    font-weight: 600;
+  }
+  #pricing:hover{
+    background-color: black
+  }
+  #legal{
+    width: 11rem;
+    text-align: center; 
+    color: floralwhite;
+    border: 1px solid;
+    font-weight: 600;
+  }
+  #legal:hover{
+    background-color: black
+  }
+  #updates{
+    width: 13rem;
+    text-align: center; 
+    color: floralwhite;
+    border: 1px solid;
+    font-weight: 600;
+  }
+  #updates:hover{
+    background-color: black
+  }

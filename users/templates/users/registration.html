@@ -1,4 +1,67 @@
+{% extends 'owners/navbar.html' %}
 {% load static %}
+{% block add %}
+<div id="bg" class="row">
+<div class="col-md-4">
+    <h3>grow your bussiness with us</h3>
+</div>
+<div class="col-md-8">
+    <div class="container">
+    <!-- <form> -->
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <br>
+      <!-- </form> -->
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="phone number">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Office number">
+        </div>
+      </div>
+    <div class="form-group col-md-6">
+        <label for="inputCity">email</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputCity"></label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+  <div class="form-group">
+    <label for="inputAddress2">land mark</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="near...">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">state</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>calicut</option>
+        <option>kochi</option>
+        
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">pincode</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+</div>
+</div>
+  
+  </div>
+<!-- {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,20 +75,20 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 
-<body>
-    <div id="master_div">
-        <header id="nav_id">
+<body> --> 
+    <!-- <div id="master_div"> -->
+        <!-- <header id="nav_id">
             <div id=" logo_div">
                 <p id="logo">House Broker</p>
             </div>
-        </header>
-        <div id="container">
-            <div id="img_part">
+        </header> -->
+        <!-- <div id="container"> -->
+            <!-- <div id="img_part">
                 <img id="img" src="{% static 'images/entre.jpg' %}" class="img-fluid" alt="...">
-            </div>
-            <div id="second-class">
+            </div> -->
+            <!-- <div id="second-class"> -->
          
-          
+          <!-- <div id="bg" class="row">
                 <form id="form-align" action="">
                     <div class="first-name">
                         <label for="validationDefault01">First name</label>
@@ -55,15 +118,14 @@
                     <div>
                         <button id="btn" class="btn btn-light" type="submit">Submit form</button>
                     </div>
-                </form>
-            </div>
+                </form> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            {% endblock %}
+        <!-- </div> -->
 
-        </div>
+   
+    <!-- </div> -->
+<!-- </body>
 
-    </div>
-    </div>
-
-    </div>
-</body>
-
-</html>
+</html> -->

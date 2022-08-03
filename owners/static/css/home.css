@@ -1,0 +1,58 @@
+body, html{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* #fullbody{
+    width: 100%;
+    /* min-height: 548px; */
+    /* background-color:white
+} */ 
+
+
+/* ///-dashboard-// */
+/* .dashboard{
+    background-color: rgb(86, 102, 119);
+    width: 287px;
+  
+    padding-top: 78px;
+   
+
+}
+
+.dashboard .dash-links li{
+    height: 50px;
+    list-style: none;
+    width: 100%;
+   
+}
+.dashboard .dash-links li a{
+display: flex;
+align-items: center;
+height: 100%;
+width: 100%;
+text-decoration: none;
+transition: all 0.5s ease;
+
+}
+.dashboard .dash-links li a i{
+    color: #fff;
+    min-width: 50px;
+    text-align: center;
+    font-size: 30px;
+
+}
+.dashboard .dash-links li a .dash-font{
+    color:#fff;
+    font-size: 19px;
+
+}
+.dashboard .dash-links li a:hover{
+    background: rgb(4 4 62);
+} */
+/* ////---/// */
+#text{
+    display: flex;
+    padding-left: 73px;
+    margin-top: 20px;
+}

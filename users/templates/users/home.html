@@ -13,65 +13,103 @@
 </head>
 
 <body>
-    <div id="fullbody">
-        <nav id="navbar">
-            <div id="nav1">
+    
+        <div class="row firstnav">
+            <div class="col-md-8">
                 <p id="logo">House Broker</p>
             </div>
-            <div id="nav2">
+            <div class="col-md-4 sign-up-div">
                 <a href="{%url 'users:login' %}"><button id="sign_btn">Sign up</button></a>
             </div>
         </nav>
-        <div id="secondmain_div">
-            <p id="text" class="h3">Pick your Stay </p>
-            <form class="form-inline">
-                <input id="searchbar" class="form-control mr-sm-2" type="search" placeholder="Search"
-                    aria-label="Search">
-                <button id="btn_search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </div>
+    <!-- /// -->
+    <div class="row">
+        <div class="secondmain_div">
+
+            <div class="navA">
+                <p id="text">Pick your Stay </p>
+            </div>
+            <!-- //// -->
+            <div class="col-md-12">
+            <form class="nav-form" action="">
+                        <input class="form-control" type="text" placeholder="Location">
+                        <input class="check" type="date">
+                        <input class="check" type="date">
+                    <div class="btn">
+                        <input class="search-btn" type="button" value="search">
+                    </div>
             </form>
         </div>
-
-        <div id="demo_images">
-
-            <div>
-                <p class="h4">Apartments</p>
-               <a href="apartments"> <img class="img1" src=" {% static 'images/apartment16..jpg' %}" alt=""></a>
+                </div>
             </div>
-            <div>
-                <p class="h4">Hotels</p>
-                <a href="apartments"><img class="img1" src=" {% static 'images/hotel.jpg' %}" alt=""></a>
+
+       
+        <!-- /////////----//////////////// -->
+        <div class="container">
+            <div class="row type">
+
+            <div class="col-md-4">
+                <p class="h4">Apartments</p><br>
+                <a href="apartments"> <img class="img" src=" {% static 'images/apartment16..jpg' %}" alt=""></a>
             </div>
-            <div">
-                <p class="h4">Houses</p>
-                <a href=""><img class="img1" src=" {% static 'images/homes.jpg' %}" alt=""></a>
+            <div class="col-md-4">
+                <p class="h4">Hotels</p><br>
+                <a href="hotel"><img class="img" src=" {% static 'images/hotel.jpg' %}" alt=""></a>
+            </div>
+            <div class="col-md-4">
+                <p class="h4">Houses</p><br>
+                <a href=""><img class="img" src=" {% static 'images/homes.jpg' %}" alt=""></a>
+        </div>
+        </div>
+</div>
+<hr>
+    <!-- //////////////////////// -->
+    <section>
+    <!-- <div id="house_models"> -->
+        <br>
+        <div class="h3" style="text-align: center">
+        Featured new Properties
+
+        </div>
+        <br>
+        <div class="row" style="text-align: center">
+            
+        <!-- <div id="model"> -->
+<div class="col-md-4">
+            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
+            <a href="">
+                <p>sugar loft apartment <br>calicut</p>
+                <p> satring from $3000</p>
+            </a>
+        </div>
+        <!-- </div> -->
+        <!-- <div id="model2"> -->
+<div class="col-md-4">
+
+            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
+            <a href="">
+                <p >sugar loft apartment <br>calicut</p>
+                <p > satring from $3000</p>
+            </a>
         </div>
 
+        <!-- </div> -->
+        <!-- <div id="model3"> -->
+<div class="col-md-4">
+
+            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
+            <a href="">
+                <p>sugar loft apartment <br>calicut</p>
+                <p> satring from $3000</p>
+            </a>
+        </div>
+
+        <!-- </div> -->
     </div>
-    <div id="house_models">
-        <div id="model">
-
-            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
-            <a href="">
-                <p align="center">sugar loft apartment <br>calicut</p>
-                <p align="center"> satring from $3000</p>
-            </a>
-        </div>
-        <div id="model2">
-            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
-            <a href="">
-                <p align="center">sugar loft apartment <br>calicut</p>
-                <p align="center"> satring from $3000</p>
-            </a>
-        </div>
-        <div id="model3">
-            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
-            <a href="">
-                <p align="center">sugar loft apartment <br>calicut</p>
-                <p align="center"> satring from $3000</p>
-            </a>
-        </div>
-
-    </div>
+    <!-- </div> -->
+</section>
+<!-- ///// -->
     <div id="first_foot">
         <table id="footer_table">
             <h2>House Broker</h2>
@@ -107,7 +145,7 @@
 
 
 
-    </div>
+ 
 </body>
 
 </html>

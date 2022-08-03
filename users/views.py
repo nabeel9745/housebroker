@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def loginexample(request):
-    return render(request,'users/loginexample.html')
+def logincreation(request):
+    return render(request,'users/logincreation.html')
 
 def home(request):
     return render(request,'users/home.html')
@@ -22,3 +22,11 @@ def boot (request):
 
 def details (request):
     return render(request,'users/details.html')
+
+def master (request):
+    return render(request,'users/master.html')
+
+def hotel (request):
+    return render(request,'users/hotel.html')
+
+

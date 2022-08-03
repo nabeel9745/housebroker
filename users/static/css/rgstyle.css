@@ -4,13 +4,13 @@ html {
     padding: 0%;
 }
 
-#master_div {
+/* #master_div {
     height: 100%;
     width: 100%;
     background-color: rgb(82, 183, 174)
-}
+} */
 
-#logo_div {
+/* #logo_div {
     width: 405px;
     height: 80px;
 }
@@ -75,4 +75,9 @@ label {
 #btn {
     margin-left: 97px;
     border: 2px solid darkblue;
+} */
+/* //// */
+#bg{
+background-image: url(../images/pixels.jpg);
+/* filter: blur(8px); */
 }

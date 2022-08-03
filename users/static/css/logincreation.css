@@ -18,17 +18,28 @@
 }
 .text-design{
     color: white;
-    font-size: 20px;
-    margin: 14px;
+    font-size: 18px;
+    margin: 10px;
     margin-left: 0;
 }
 
 .email{
     width: 329px;
-    height: 33px;
+    height: 40px;
     
 }
-
+#otp_button{
+    color: rgb(255 255 255);
+    background-color: rgb(67 68 115);
+    padding: 9px 76px;
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 330px;
+}
+.OTPBOX {
+    width: 234px;
+    height: 43px;
+}
 #button{
 
     color: rgb(2, 12, 2);
@@ -42,19 +53,4 @@
     margin-left: 461px;
     margin-top: 80px
 } 
-#forgot{
-    color: azure;
-    text-decoration: none;
-}
-#already{
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-#b1{
 
-}
-#b2{
-    
-}

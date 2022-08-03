@@ -1,0 +1,54 @@
+
+
+.firstnav{
+    background-color:  rgb(4 4 62);
+ }
+
+#logo{
+    font-weight: bold;
+    color: white;
+    font-family: cursive;
+    margin: 0px;
+    font-size: 33px;
+    text-align: center;
+    padding-top: 30px;
+}
+.secondmain_div{
+    background-color:rgb(4 4 62);
+    height: 103px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+
+#text{
+    color: #90b3da;
+    font-size: 2.2vw;
+    margin: 0%;
+    font-variant: small-caps;
+    margin-left: 25px;
+}
+
+.nav-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.form-control{
+    max-width: 390px;
+}
+.check{
+    height: 40px;
+}
+.search-btn{
+    height: 40px;
+    width: 92px;
+}
+
+.buttoo{
+    display: flex;
+    justify-content: center;
+   
+}

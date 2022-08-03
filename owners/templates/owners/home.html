@@ -1,12 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    g
-</body>
-</html>
+{% extends 'owners/navbar.html' %}
+{% load static %}
+{% block add %}
+ 
+    <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
+
+    <!-- <div class="row">
+        <div class="col-md-3">
+<div class="dashboard">
+<ul class="dash-links" > 
+<li>
+    <a href="">
+    <i class='bx bxs-message-alt-add'></i>
+    <label class="dash-font" for="">name and location</label>
+</a>
+</li>
+<li>
+    <a href="">
+        <i class='bx bxs-location-plus'></i>
+        <label class="dash-font" for="">property setup</label>
+    
+</a>
+</li>
+<li>
+    <a href="">
+        <i class='bx bx-credit-card'></i>
+        <label class="dash-font" for="">photos</label>
+
+</a>
+</li>
+<li>
+    <a href="">
+        <i class='bx bxs-info-square'></i>
+        <label class="dash-font" for="">property updates</label>
+
+</a>
+</li>
+</ul>
+</div>
+</div> -->
+<!-- //// -->
+<!-- <div class="col-md-9"> -->
+<h3 id="text" class="h3">List your property and start welcoming guests</h3>
+    <div class="container">
+        <div class="row">
+<div class="col-md-4 pt-5">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{% static 'images/Taupe-sofa.jpg' %}" alt="Card image cap">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Apartments</h5>
+          <a href="addapart" class="btn btn-primary">Add aprtments</a>
+        </div>
+      </div>
+</div>
+<div class="col-md-4 pt-5">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{% static 'images/hotel.jpg' %}" alt="Card image cap">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Hotel</h5>
+          <a href="#" class="btn btn-primary">Add hotels</a>
+        </div>
+      </div>
+</div>    
+<div class="col-md-4 pt-5">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{% static 'images/Taupe-sofa.jpg' %}" alt="Card image cap">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Home</h5>
+          <a href="#" class="btn btn-primary">Add home</a>
+        </div>
+      </div>
+</div>    
+
+
+</div>
+</div>
+<!-- </div> -->
+{% endblock %}
+
+ 
+
+
+

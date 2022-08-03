@@ -1,10 +1,56 @@
-#carouselExampleControls{
-    max-width: 996px;
-    max-height: 496px;
-    margin-left: 122px;
-
+.body{
+    background-color: #e2e2ca
 }
+
 #space{
     min-height: 45px;
     width: 100%;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+}
+.carousel-inner{
+    max-width: 750px;
+    max-height: 417px;
+   
+}
+#bookings{
+    width: 362px;
+    height: 417px;
+    background-color: rgb(171, 212, 142);
+    /* position: fixed; */
+    left: 842px;
+}
+#checkin_bar{
+    height: 49px;
+    min-width: 141px;
+    margin-left: 16px;
+
+}
+#checkout_bar{
+    height: 49px;
+    min-width: 139px;
+}
+ #property-name {
+        display: grid;
+        margin-left: 84px;
+        margin-top: 23px;
+}
+#booking-form{
+    padding: 14px 22px;
+}
+#amount{
+    display:flex;
+    grid-gap: 73px;
+}
+#hightlight-font{
+    font-family:Georgia, serif;
+    text-decoration-line: underline;
+}
+ul{
+    font-family: cursive;
+    font-size: 1.3rem;
+    list-style: circle;
 }
