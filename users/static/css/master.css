@@ -36,18 +36,20 @@ body, html{
     top: 39px;
     right: 82px;
 }
+
 #first_foot{
-    width: 100%px;
-    height: 214px;
-    background-color:rgb(79, 79, 98);
+    background-color:rgb(48, 42, 73);
 }
-#footer_table{
-    margin-left: 78px;
-    margin-top: 35px
+#foot_table{
+    margin-left: 50px;
+}
+#foot_icon{
+    margin-left: 50px;
+    padding-top: 15px;
+    color: darkgray;
+    font-family: cursive;
 }
 #grow{
-    width: 230px;
-    margin-left: 721px;
-    margin-top: -115px;
+  padding-top: 27px;
 }
 

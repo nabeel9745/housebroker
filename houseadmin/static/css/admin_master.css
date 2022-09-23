@@ -22,13 +22,12 @@
     padding-top: 30px;
 }
 #sign_btn{
-    /* // */
     color: #362f2f;
     background: white;
     border: none;
-    padding: 18px 27px;
+    padding: 13px 46px;
     font-weight: 900;
-    border-radius: 50px;
+    border-radius: 6px;
     position: absolute;
     top: 39px;
     right: 82px;

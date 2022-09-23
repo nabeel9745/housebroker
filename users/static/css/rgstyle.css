@@ -77,7 +77,19 @@ label {
     border: 2px solid darkblue;
 } */
 /* //// */
-#bg{
-background-image: url(../images/pixels.jpg);
+#rg-bg{
+background-image: url(/static/images/entre.jpg);
 /* filter: blur(8px); */
+}
+#rg-text{
+    font-family: monospace;
+    margin-top: 176px;
+    margin-left: 74px;
+    font-size: 39px;
+    font-weight: 900;
+    height: 500px;
+}
+
+#rg-form{
+    margin-top: 123px;
 }

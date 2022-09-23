@@ -13,14 +13,14 @@
 </head>
 
 <body>
-    
-        <div class="row firstnav">
-            <div class="col-md-8">
-                <p id="logo">House Broker</p>
-            </div>
-            <div class="col-md-4 sign-up-div">
-                <a href="{%url 'users:login' %}"><button id="sign_btn">Sign up</button></a>
-            </div>
+
+    <div class="row firstnav">
+        <div class="col-md-8">
+            <p id="logo">House Broker</p>
+        </div>
+        <div class="col-md-4 sign-up-div">
+            <a href="{%url 'login' %}"><button id="sign_btn">Sign up</button></a>
+        </div>
         </nav>
     </div>
     <!-- /// -->
@@ -32,22 +32,22 @@
             </div>
             <!-- //// -->
             <div class="col-md-12">
-            <form class="nav-form" action="">
-                        <input class="form-control" type="text" placeholder="Location">
-                        <input class="check" type="date">
-                        <input class="check" type="date">
+                <form class="nav-form" action="">
+                    <input class="form-control" type="text" placeholder="Location">
+                    <input class="check" type="date">
+                    <input class="check" type="date">
                     <div class="btn">
                         <input class="search-btn" type="button" value="search">
                     </div>
-            </form>
-        </div>
-                </div>
+                </form>
             </div>
+        </div>
+    </div>
 
-       
-        <!-- /////////----//////////////// -->
-        <div class="container">
-            <div class="row type">
+
+    <!-- /////////----//////////////// -->
+    <div class="container">
+        <div class="row type">
 
             <div class="col-md-4">
                 <p class="h4">Apartments</p><br>
@@ -55,97 +55,101 @@
             </div>
             <div class="col-md-4">
                 <p class="h4">Hotels</p><br>
-                <a href="hotel"><img class="img" src=" {% static 'images/hotel.jpg' %}" alt=""></a>
+                <a href="{% url 'hotel' %}"><img class="img" src=" {% static 'images/hotel.jpg' %}" alt=""></a>
             </div>
             <div class="col-md-4">
                 <p class="h4">Houses</p><br>
                 <a href=""><img class="img" src=" {% static 'images/homes.jpg' %}" alt=""></a>
+            </div>
         </div>
-        </div>
-</div>
-<hr>
+    </div>
+    <hr>
     <!-- //////////////////////// -->
     <section>
-    <!-- <div id="house_models"> -->
+        <!-- <div id="house_models"> -->
         <br>
         <div class="h3" style="text-align: center">
-        Featured new Properties
+            Featured new Properties
 
         </div>
         <br>
         <div class="row" style="text-align: center">
-            
-        <!-- <div id="model"> -->
-<div class="col-md-4">
-            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
-            <a href="">
-                <p>sugar loft apartment <br>calicut</p>
-                <p> satring from $3000</p>
-            </a>
+
+            <!-- <div id="model"> -->
+            <div class="col-md-4">
+                <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
+                <a href="">
+                    <p>sugar loft apartment <br>calicut</p>
+                    <p> satring from $3000</p>
+                </a>
+            </div>
+            <!-- </div> -->
+            <!-- <div id="model2"> -->
+            <div class="col-md-4">
+
+                <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
+                <a href="">
+                    <p>sugar loft apartment <br>calicut</p>
+                    <p> satring from $3000</p>
+                </a>
+            </div>
+
+            <!-- </div> -->
+            <!-- <div id="model3"> -->
+            <div class="col-md-4">
+
+                <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
+                <a href="">
+                    <p>sugar loft apartment <br>calicut</p>
+                    <p> satring from $3000</p>
+                </a>
+            </div>
+
+            <!-- </div> -->
         </div>
         <!-- </div> -->
-        <!-- <div id="model2"> -->
-<div class="col-md-4">
+    </section>
+    <!-- ///// -->
+    <section class="row" id="first_foot">
+        <div class="col">
+            <table id="foot_table">
+                <h2 id="foot_icon">House Broker</h2> 
+                <tr>
+                    <td><a href="#" class="text-light">about us</a></td>
+                </tr>
 
-            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
-            <a href="">
-                <p >sugar loft apartment <br>calicut</p>
-                <p > satring from $3000</p>
-            </a>
+                <tr>
+                    <td><a href="#" class="text-light">Info link</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="text-light">help</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="text-light">grow your bussiness</a></td>
+                </tr>
+            </table>
+            <br>
         </div>
 
-        <!-- </div> -->
-        <!-- <div id="model3"> -->
-<div class="col-md-4">
-
-            <img id="mode_pic1" src=" {% static 'images/hotel.jpg' %}" alt="">
-            <a href="">
-                <p>sugar loft apartment <br>calicut</p>
-                <p> satring from $3000</p>
-            </a>
-        </div>
-
-        <!-- </div> -->
-    </div>
-    <!-- </div> -->
-</section>
-<!-- ///// -->
-    <div id="first_foot">
-        <table id="footer_table">
-            <h2>House Broker</h2>
-
-            <tr>
-                <td><a href="#" class="text-info">about us</a></td>
-            </tr>
-
-            <tr>
-                <td><a href="#" class="text-info">Info link</a></td>
-            </tr>
-            <tr>
-                <td><a href="#" class="text-info">help</a></td>
-            </tr>
-            <tr>
-                <td><a href="#" class="text-info">grow your bussiness</a></td>
-            </tr>
-        </table>
-        <div id="grow">
-            <p class="text-info">Grow your bussiness with us</p>
-            <a href="registration">
+        <div class="col">
+            <p id="grow" class="text-light">Grow your bussiness with us</p>
+            <a href="{%url 'registration'%}">
                 <button type="button" class="btn btn-light">list your property</button>
             </a>
         </div>
-    </div>
-
-    </div>
-
-
-
-
-
-
-
-
+      <br>
+    </section>
  
+    </div>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

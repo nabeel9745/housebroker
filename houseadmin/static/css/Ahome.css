@@ -1,0 +1,35 @@
+
+#admin_dash{
+margin: 62px 13px;
+}
+ul{
+    margin-top: 37px;
+    margin-left: 3px;
+}
+ul a{
+    padding: 2px 6px;
+}
+ul a li{
+    text-align: center;
+    padding: 11px 2px;
+    background: rgb(117, 117, 112);
+    height: 63px;
+    list-style: none
+}
+ul li:hover{
+  
+    background: beige;
+}
+ul li:active {
+    background-color: yellow;
+  }
+ul li label{
+    font-size:30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: rgb(89, 83, 130);
+}
+#table_1{
+    margin-top: 133px;
+    margin-left: 0px;
+}

@@ -29,4 +29,12 @@ def master (request):
 def hotel (request):
     return render(request,'users/hotel.html')
 
+def otp (request):
+    return render(request,'users/otp.html')
+
+def book(request):
+    return render(request,'users/booking.html')
+
+
+
 

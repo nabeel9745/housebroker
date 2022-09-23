@@ -1,0 +1,56 @@
+
+#bg {
+    background-image: url(/static/images/pexels-photo-157118.jpeg);
+}
+#form-div{
+    height: 397px;
+    margin: auto;
+    padding: 51px 2px;
+    max-width: 331px;
+}
+
+.class{
+    color: rgb(215, 228, 221);
+    font-family:cursive ;
+    text-align: center;
+    margin-top: 48px;
+    font-size: 44px;
+}
+.text-design{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.email{
+    width: 329px;
+    height: 40px;
+    
+}
+#otp_button{
+    color: rgb(255 255 255);
+    background-color: rgb(67 68 115);
+    padding: 9px 76px;
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 330px;
+}
+.OTPBOX {
+    width: 329px;
+    height: 43px;
+}
+#button{
+
+    color: rgb(2, 12, 2);
+    background-color: rgb(195 203 205);
+    padding: 7px 65px;
+    margin-top: 46px;
+    margin-left: 68px;
+}
+
+#whole{
+    margin-left: 461px;
+    margin-top: 80px
+} 
+

@@ -3,18 +3,10 @@ body, html{
     padding: 0%;
 }
 
-/* #fullbody{
-    width: 100%;
-    /* min-height: 548px; */
-    /* background-color:white
-} */ 
-
-
-/* ///-dashboard-// */
-/* .dashboard{
-    background-color: rgb(86, 102, 119);
-    width: 287px;
-  
+.dashboard{
+    background: #efefef;
+    /* width: 287px; */
+    height: 100%;
     padding-top: 78px;
    
 
@@ -22,8 +14,10 @@ body, html{
 
 .dashboard .dash-links li{
     height: 50px;
+    background-color: rgb(209 216 223);
     list-style: none;
     width: 100%;
+    border: 3px solid rgb(254, 254, 254);
    
 }
 .dashboard .dash-links li a{
@@ -36,20 +30,20 @@ transition: all 0.5s ease;
 
 }
 .dashboard .dash-links li a i{
-    color: #fff;
+    color: #070437;
     min-width: 50px;
     text-align: center;
     font-size: 30px;
 
 }
 .dashboard .dash-links li a .dash-font{
-    color:#fff;
+    color: #211d1d;
     font-size: 19px;
 
 }
 .dashboard .dash-links li a:hover{
-    background: rgb(4 4 62);
-} */
+    background: rgb(148, 148, 222);
+}
 /* ////---/// */
 #text{
     display: flex;

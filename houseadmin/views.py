@@ -2,18 +2,13 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def home(request):
-        return render(request,'houseadmin/index.html')
-
-def face(request):
-     return render(request,'houseadmin/face.html')     
-
-def house(request):
-     return render(request,'houseadmin/house.html')   
-
-def controls(request):
-     return render(request,'houseadmin/controls.html')       
+def index(request):
+        return render(request,'houseadmin/index.html')    
 
 def adminhome(request):
-     return render(request,'houseadmin/adminhome.html')       
+        return render(request,'houseadmin/adminhome.html') 
+
+def master_a(request):
+        return render(request,'houseadmin/admin_master.html')      
+
 

@@ -1,0 +1,11 @@
+#book_name{
+   font-family: serif;
+}
+.datedisn{
+    color: rgb(207, 217, 214);
+    background-color: rgb(161, 161, 235);
+    border-radius: 5px;
+    width: 160px;
+    height: 40px;
+    border: none;
+}

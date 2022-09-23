@@ -1,14 +1,20 @@
 from django.urls import path
 from .import views
 
-app_name='owners'
+# app_name='owners'
 
 urlpatterns=[
-   path('hello',views.hello,name='hello'),
-   path('contactadmin',views.contactadmin),
-   path('home',views.home),
-   path('addapart',views.addapart),
+   path('home',views.home,name='home'),
+   path('addapart',views.addapart,name='addapart'),
    path('navbar',views.navbar),
+   path('login',views.login),
+   path('account',views.account,name='account'),
+   path('listed_prop',views.listed_prop,name='listed_prop'),
+   path('property_up',views.property_up,name='property_up'),
+
+
+
+
 
 
 ]
