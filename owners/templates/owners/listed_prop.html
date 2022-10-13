@@ -2,8 +2,6 @@
 {% load static %}
 {% block add %}
 <div class="container col-md-9">
-<!-- <div class="container"> -->
-
     <p class="mt-5"><em>your Listed properties are shown below</em></p>
 <table id="my_p_table" class="table table-success table-striped">
         <thead>
@@ -12,30 +10,30 @@
             <th scope="col">Property name</th>
             <th scope="col">Address</th>
             <th scope="col">Landmark</th>
-            <th scope="col">Pincodee</th>
-
+            <th scope="col">Pincode</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <!-- <th scope="row">1</th>
-            <td>Mark</td> -->
-          
-          </tr>
-          <tr>
-            <!-- <th scope="row">2</th>
-            <td>Jacob</td>
-           -->
-          </tr>
-          <tr>
-            <!-- <th scope="row">3</th> -->
-          
-          </tr>
-        </tbody>
       </table>
       </div>
-<!-- </div> -->
+<!-- //script/// -->
+<script>
+function listed_prop(){
+  $.ajax({
+    url : 'list_prop',
+    type : 'GET',
+    success : function(response){
+      data = response.display
+      $('.tbl_dsn').remove()
+      for(i=0;i<=data.length;i++){
+        $('#my_p_table').append('<tr class="tbl_dsn"><td>'+ data[i].v +'</td><td>'+ data[i].v1 +'</td><td>'+ data[i].v2 +'</td><td>'+ data[i].v3 +'</td><td>'+ data[i].v4 +'</td></tr>')  
+      }
 
+    }
+
+  })
+}
+
+</script>
 
 
 

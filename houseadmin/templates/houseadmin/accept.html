@@ -1,0 +1,39 @@
+{% extends 'houseadmin/admin_master.html' %}
+{% load static %}
+{% block add %}
+<section class="col-md-8 bg-dark">
+    <div class="cntainer bg-light">
+<p id="request_text" class="h1">Owners request
+</p>
+<table id="request_table" class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td><button onclick="accept_req()" class="btn btn-success">Accept</button></td>
+        <td><button class="btn btn-danger">Reject</button></td>
+      </tr> 
+    </tbody>
+  </table>
+</div>
+</section>
+
+<script>
+   function accept_req(){
+     alert("gdfgh")
+   }
+</script>
+{% endblock %}

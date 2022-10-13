@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 # Create your views here.
 
@@ -34,6 +34,9 @@ def otp (request):
 
 def book(request):
     return render(request,'users/booking.html')
+    
+def confirmation(request):
+    return render(request,'users/confirmation.html')
 
 
 

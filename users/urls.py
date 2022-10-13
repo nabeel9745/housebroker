@@ -15,6 +15,8 @@ urlpatterns=[
    path('hotel',views.hotel,name='hotel'),
    path('otp',views.otp),
    path('book',views.book,name='book'),
+   path('confirmation',views.confirmation,name='confirmation'),
+
 
 
 

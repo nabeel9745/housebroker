@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/own_req.css' %}">
     <link rel="stylesheet" href="{% static 'css/admin_master.css' %}">
     <link rel="stylesheet" href="{% static 'css/Ahome.css' %}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -25,9 +26,43 @@
         </div>
         </nav>
         <div>
+            <div class="row">
+            <section id="admin_dash" class="col-md-3 ">
+                <ul class="list-group list-group-flush">
+                  <a href="{% url 'accept' %}">
+                    <li class="">
+                      <label for="">Owners request</label>
+                    </li>
+                  <a href="{% url 'v_owners' %}">
+                    <li class="" >
+                      <label for="">View owners</label>
+                    </li>
+                  </a>
+                  <a href="{% url 'r_prop' %}">
+                    <li class="">
+                      <label for="">Reg properties</label>
+                    </li>
+                  </a>
+                  <a href="">
+                    <li class="">
+                      <label for="">message</label>
+                    </li>
+                  </a>
+                  <a href="">
+                    <li class="">
+                      <label for="">users feedback</label>
+                    </li><a href=""></a>
+                    <a href="">
+                      <li class="">
+                        <label for="">logout</label>
+                      </li><a href=""></a>
+                   
+                </ul>
+              </section>
             {% block add %}
 
             {% endblock %}
+        </div>
         </div>
 
 </body>

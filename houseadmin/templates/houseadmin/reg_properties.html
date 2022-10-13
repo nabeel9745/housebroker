@@ -1,0 +1,22 @@
+{% extends 'houseadmin/admin_master.html'%}
+{% load static %}
+{% block add %}
+<div class="container col-md-8">
+    <p class="mt-5"><em>your Listed properties are shown below</em></p>
+<table id="my_p_table" class="table table-success table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">property name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Landmark</th>
+            <th scope="col">Pincode</th>
+            <th scope="col">owner</th>
+          </tr>
+        </thead>
+       
+      </table>
+      </div>
+
+      {% endblock %}
+

@@ -8,51 +8,139 @@
 <!-- // -->
 <div id="rg-form" class="col-md-8">
     <div class="container">
-      <form action="">
+        <form>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
+            <input id="f_n_v" type="text" class="form-control" placeholder="First name">
+            <p id="fst_nm" style="color: red;"></p>
           </div>
           <div class="col">
-            <input type="text" class="form-control " placeholder="Last name">
+            <input id="l_n_v" type="text" class="form-control " placeholder="Last name">
+            <p id="lst_nm" style="color: red;"></p>
+
           </div>
-         
+
         </div>
         <br>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="user name">
+            <input id="u_n_v" type="text" class="form-control" placeholder="user name">
+            <p id="us_nm" style="color: red;"></p>
+
           </div>
           <div class="col">
-            <input type="text" class="form-control " placeholder="phone number">
+            <input id="p_n_v" type="number" class="form-control " placeholder="phone number">
+            <p id="ph_nm_v" style="color: red;"></p>
+            
           </div>
          
         </div>
      <br>
-        <!-- <div class="col"> -->
-          <!-- <input type="text" class="form-control col-md-6" placeholder="phone number"> -->
-        <!-- </div> -->
-        <!-- <br> -->
-        <!-- <div class="col"> -->
-          <input type="text" class="form-control col-md-12" placeholder="email address">
-        <!-- </div> -->
+       
+          <input id="e_a_v" type="email" class="form-control col-md-12" placeholder="email address">
+          <p id="em_addrs_v" style="color: red;"></p>
+
         <br>
      
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="password">
+          <input id="p_v" type="password" class="form-control" placeholder="password">
+          <p id="pass_v" style="color: red;"></p>
+
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="confirm password">
+          <input id="r_p_v" type="password" class="form-control" placeholder="confirm password">
+          <p id="re_p_v" style="color: red;"></p>
+
         </div>
         </div>
   <br>
-  <button type="button" class="btn btn-secondary btn-lg btn-block">CONTINUE</button>
+  <a href="">
+  <div class="d-grid gap-2">
+    <button onclick="return rg_validation()"type="button" class="btn btn-secondary">CONTINUE</button>
+  </div>
+  </a>
   </form>
 </div>
 </div>
-  
   </div>
+  <!-- /// -->
+  
+<!-- //// -->
+<script>
+  function rg_validation(){
+    status = 1
+    first_name_v = document.getElementById("f_n_v").value
+    last_name_v = document.getElementById("l_n_v").value
+    username_v = document.getElementById("u_n_v").value
+    phn_v = document.getElementById("p_n_v").value
+    email_address_v = document.getElementById("e_a_v").value
+    password_v = document.getElementById("p_v").value
+    reenter_v = document.getElementById("r_p_v").value
+    // console.log(first_name)
+    if(first_name_v == ''){
+               document.getElementById("fst_nm").innerHTML="please fill your email or phone number"
+               status = 0
 
+            }
+            else{
+                document.getElementById("fst_nm").innerHTML=""
+
+            }
+            if(last_name_v == ''){
+               document.getElementById("lst_nm").innerHTML="please fill your email or phone number"
+               status = 0
+
+            }
+            else{
+                document.getElementById("lst_nm").innerHTML=""
+
+            }
+            if(username_v == ""){
+              document.getElementById("us_nm").innerHTML="set a unique username"
+              status = 0
+
+            }
+            else{
+              document.getElementById("us_nm").innerHTML=""
+            }
+            if(phn_v == ""){
+              document.getElementById("ph_nm_v").innerHTML="fill a valid phone number"
+              status = 0
+
+            }
+            else{
+              document.getElementById("ph_nm_v").innerHTML=""
+            }
+            if(email_address_v == ""){
+              document.getElementById("em_addrs_v").innerHTML="fill valid email address"
+              status = 0
+
+            }
+            else{
+              document.getElementById("em_addrs_v").innerHTML=""
+            }
+            if(password_v == ""){
+              document.getElementById("pass_v").innerHTML="Enter your password"
+              status = 0
+
+            }
+            else{
+              document.getElementById("pass_v").innerHTML=""
+            }
+            if(password_v == reenter_v){
+              document.getElementById("re_p_v").innerHTML=""
+
+              status = 0
+            }
+            else{
+              document.getElementById("re_p_v").innerHTML="password is incorrect"
+            }
+         
+            if (status == 0){
+return false
+}            
+  }
+</script>
             {% endblock %}
  
