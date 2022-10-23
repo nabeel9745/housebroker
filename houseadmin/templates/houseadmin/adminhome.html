@@ -2,8 +2,34 @@
 {% load static %}
 {% block add %}
 
-<!-- //// -->
+<style>
+  h1{
+  font-family: 'Times New Roman', Times, serif;
+    /* background: #121FCF;  */
+    background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 100px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-size: 80px;
+  }
+  p{
+      font-size: large;
+      text-align: center;
+  }
+
+  
+</style>
+
 <section class="col-md-8 bg-light">
+<h1 class="text-center">Welcome, {{prof.name|capfirst}} </h1>
+<i><p> "if you really give someone a comfort space, they will always search for it later " </p></i>
+</section>
+<!-- //// -->
+<!-- <section class="col-md-8 bg-light">
   <p class="fs-1 fw-bold text-center">Owners info</p>
   <table id="table_1" class="table">
     <thead>
@@ -43,6 +69,6 @@
       </tr>
     </tbody>
   </table>
-</section>
+</section> -->
 
 {% endblock %}

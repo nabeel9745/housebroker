@@ -1,4 +1,4 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +13,7 @@
             
         }
     </style>
-    <link rel= "stylesheet" href="{% static 'css/style2.css'%}">
+    <link rel="stylesheet" href="{% static 'css/loginpage.css'%}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
@@ -23,17 +23,21 @@
     <h1 class="class">House Broker</h1>
     <div style=" margin-left: 461px;
     margin-top: 80px">
-        <form action="">
+        <form action="" method="post">
+            {% csrf_token %}
             <h6 style="color: white;">Email Address or phone number</h6>
-            <input class="email" type="text" >
+            <input class="email" type="text" name="l_email" >
             <br><br><br>
             <h6 style="color: white;">password</h6>
-            <input class="email" type="password"><br>
-            <a id="forgot" href="">forgot password ?.</a>
+            <input class="email" type="password" name="l_psd"><br>
+            <!-- <a id="forgot" href="">forgot password ?.</a>/ -->
+            <p>{{err}}</p>
+            <p>{{errr}}</p>
+
             <br>
             
     
-            <input id="button" type="button" value="sign In">
+            <input id="button" type="submit" value="sign In">
 
 
         </form>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+        font-family: 'Times New Roman', Times, serif;
+          background: #121FCF;
+          background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+          background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+          background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          padding-top: 100px;
+          font-weight: bolder;
+          margin-bottom: 30px;
+          font-size: 80px;
+        }
+        p{
+            font-size: large;
+            text-align: center;
+        }
+    
+        
+    </style>
+    
+    <h1 class="text-center">Welcome, {{profil.name|capfirst}} </h1>
+    
+    <i><p> "Art is not what you see, But what you make others see" </p></i>
+    
+</body>
+</html>

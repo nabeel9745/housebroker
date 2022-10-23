@@ -10,9 +10,6 @@ def home(request):
 
 def login (request):
      return render(request,'users/loginpage.html') 
-
-def registration (request):
-    return render(request,'users/registration.html')
  
 def apartments (request):
     return render(request,'users/apartments.html')

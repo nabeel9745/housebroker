@@ -13,6 +13,10 @@ urlpatterns=[
    path('listed_prop',views.listed_prop,name='listed_prop'),
    path('list_url',views.list_url,name='list_url'),
    path('list_prop',views.list_prop,name='list_prop'),
+   path('registration',views.registration,name='registration'),
+   path('welcome',views.welcome,name='welcome'),
+
+
 
    
 

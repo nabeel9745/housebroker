@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg{
+            background-image: url("{% static 'images/login.jpg' %}")    
+        }
+        .error{
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'css/loginpage.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body id="bg" style="background-color: rgb(21, 34, 68);"> 
+   
+    <h1 class="class">House Broker</h1>
+    <div style=" margin-left: 461px;
+    margin-top: 80px">
+        <form method="post" action="" id="adm_val">
+            {% csrf_token %} 
+            <h6 style="color: white;">Username</h6>
+            <input class="email" type="text" name="admin_user" ><br>
+            
+            <br><br><br>
+            <h6 style="color: white;">password</h6>
+            <input class="email" type="password" name="admin_pass"><br>
+            <a id="forgot" href="">forgot password ?.</a>
+            <br>
+            <h1>{{error}}</h1>
+            <input id="button" type="submit" value="sign In">
+        </form>
+    </div>
+    <!-- <script>
+        $(document).ready(function(){
+            $('#adm_val').validate({
+
+
+                rules: {
+                    admin_user:{
+                        required:true,
+                        email:true
+                    },
+                    admin_pass:{
+                        required:true,
+
+                    }
+
+                }
+        })                
+            
+        })
+    </script> -->
+</body>
+</html>

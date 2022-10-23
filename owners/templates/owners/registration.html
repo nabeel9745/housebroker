@@ -8,43 +8,27 @@
 <!-- // -->
 <div id="rg-form" class="col-md-8">
     <div class="container">
-        <form>
-        <div class="row">
-          <div class="col">
-            <input id="f_n_v" type="text" class="form-control" placeholder="First name">
-            <p id="fst_nm" style="color: red;"></p>
-          </div>
-          <div class="col">
-            <input id="l_n_v" type="text" class="form-control " placeholder="Last name">
-            <p id="lst_nm" style="color: red;"></p>
+        <form method="post">
+          {% csrf_token %}
+      
+          <input id="f_n_v" type="text" class="form-control col-md-12" placeholder="full Name" name="r_name">
+          <p id="full_n_v" style="color: red;"></p>
 
-          </div>
 
-        </div>
         <br>
-        <div class="row">
-          <div class="col">
-            <input id="u_n_v" type="text" class="form-control" placeholder="user name">
-            <p id="us_nm" style="color: red;"></p>
+        <input id="p_n_v" type="number" class="form-control col-md-12" placeholder="Phone Number" name="r_phn">
+        <p id="ph_nm_v" style="color: red;"></p>
 
-          </div>
-          <div class="col">
-            <input id="p_n_v" type="number" class="form-control " placeholder="phone number">
-            <p id="ph_nm_v" style="color: red;"></p>
-            
-          </div>
-         
-        </div>
      <br>
        
-          <input id="e_a_v" type="email" class="form-control col-md-12" placeholder="email address">
+          <input id="e_a_v" type="email" class="form-control col-md-12" placeholder="email address" name="r_email">
           <p id="em_addrs_v" style="color: red;"></p>
 
         <br>
      
       <div class="row">
         <div class="col">
-          <input id="p_v" type="password" class="form-control" placeholder="password">
+          <input id="p_v" type="password" class="form-control" placeholder="password" name="r_psd">
           <p id="pass_v" style="color: red;"></p>
 
         </div>
@@ -55,12 +39,16 @@
         </div>
         </div>
   <br>
-  <a href="">
   <div class="d-grid gap-2">
-    <button onclick="return rg_validation()"type="button" class="btn btn-secondary">CONTINUE</button>
+    <!-- <button onclick="return rg_validation()"type="submit" class="btn btn-secondary">CONTINUE</button> -->
+ <input type="submit" onclick="rg_validation()" class="btn btn-secondary">
   </div>
-  </a>
   </form>
+  <center>
+    <br>
+    <h2>{{msg}}</h2>
+
+  </center>
 </div>
 </div>
   </div>
@@ -70,40 +58,24 @@
 <script>
   function rg_validation(){
     status = 1
-    first_name_v = document.getElementById("f_n_v").value
-    last_name_v = document.getElementById("l_n_v").value
-    username_v = document.getElementById("u_n_v").value
+
+    full_name= document.getElementById("f_n_v").value
+  
     phn_v = document.getElementById("p_n_v").value
     email_address_v = document.getElementById("e_a_v").value
     password_v = document.getElementById("p_v").value
     reenter_v = document.getElementById("r_p_v").value
     // console.log(first_name)
-    if(first_name_v == ''){
-               document.getElementById("fst_nm").innerHTML="please fill your email or phone number"
+    if(full_name == ''){
+               document.getElementById("full_n_v").innerHTML="please fill your email address"
                status = 0
 
             }
             else{
-                document.getElementById("fst_nm").innerHTML=""
+                document.getElementById("full_n_v").innerHTML=""
 
             }
-            if(last_name_v == ''){
-               document.getElementById("lst_nm").innerHTML="please fill your email or phone number"
-               status = 0
-
-            }
-            else{
-                document.getElementById("lst_nm").innerHTML=""
-
-            }
-            if(username_v == ""){
-              document.getElementById("us_nm").innerHTML="set a unique username"
-              status = 0
-
-            }
-            else{
-              document.getElementById("us_nm").innerHTML=""
-            }
+            
             if(phn_v == ""){
               document.getElementById("ph_nm_v").innerHTML="fill a valid phone number"
               status = 0
