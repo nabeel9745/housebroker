@@ -9,23 +9,23 @@
     <thead>
       <tr>
         <th scope="col">ID</th>
-        <th scope="col">Artist Name</th>
+        <th scope="col">Owner Name</th>
         <th scope="col">Phone number</th>
         <th scope="col">Email address</th>
-        <th scope="col"></th>
-        <th scope="col"></th>
+        <!-- <th scope="col"></th> -->
+        <th colspan="2" scope="col"></th>
       </tr>
     </thead>
     <tbody>
     {% for i in viewreq %}
-      <form action="" method="post">
+      <form action="" method="POST">
         {% csrf_token %}
       <tr>
         <th scope="row">{{i.id}}</th>
-        <td> {{i.owner_name}}   </td>
-        <td> {{i.owner_phn}}   </td>
-        <td> {{i.owner_email}}   </td>
-        <td><button class="btn btn-success" type="submit" name="approve">Accept</button></td>
+        <td>{{i.owner_name}}</td>
+        <td>{{i.owner_phn}}</td>
+        <td>{{i.owner_email}}</td>
+        <td> <button class="btn btn-success" type="submit" name="accept">Accept</button></td>
         <td><button class="btn btn-danger" type="submit" name="reject">Reject</button></td>
     <th><input type="hidden" name="id" value="{{i.id}}" id=""></th>
 
@@ -36,38 +36,4 @@
   </table>
 </div>
 </section>
-
-
-
-
 {% endblock %}
-<!-- <table class="table shadow">
-  <thead>
-    <tr>
-      <th scope="col">S NO</th>
-      <th scope="col">Artist Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Category</th>
-      <th scope="col">Qualification</th>
-      <th colspan="2" scope="col"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    {% for b in artist %}
-    <form action="" method="POST">
-      {% csrf_token %}
-    <tr>
-      <th scope="row">{{forloop.counter}}</th>
-      <td>{{b.name|capfirst}}</td>
-      <td>{{b.email}}</td>
-      <td>{{b.category|capfirst}}</td>
-      <td>{{b.qualification|capfirst}}</td>
-      <td ><button class="btn btn-success" name="approve" type="submit">Approve</button></td>
-      <td ><button class="btn btn-danger" name="reject" type="submit">Reject</button></td>
-    <td><input type="hidden" name="id" value="{{b.id}}" id=""></td>
-    </tr>
-  </form>
-    {% endfor %} 
-  </tbody>
-</table> -->

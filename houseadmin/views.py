@@ -1,4 +1,5 @@
 from contextlib import redirect_stdout
+# from curses import use_default_colors
 from django.shortcuts import render,redirect
 from houseadmin.models import Admin_login
 from owners.models import User_registration
@@ -16,16 +17,22 @@ def accept(request):
    request_data = User_registration.objects.filter(approved='not approved')
    if request.method == 'POST':
         store_to = User_registration.objects.get(id=request.POST['id'])
-        if 'approve' in request.POST:
-                store_to.approved='approved'
         if 'reject' in request.POST:
-                store_to.approved='rejected'
+                store_to.approved='rejected'      
+        if 'accept' in request.POST:
+                store_to.approved=('approved')
                 store_to.save()
    return render(request,'houseadmin/accept.html',{'viewreq':request_data})
 
 def v_owners(request):
-        return render(request,'houseadmin/view_owners.html')   
+           artist_info=User_registration.objects.filter(approved='approved')
+           return render(request,'houseadmin/view_owners.html',{'view_owners':artist_info})  
 
+def delete_owners(req,id):
+    User_registration.objects.get(id=id).delete()
+    return redirect('v_owners')
+
+        
 def r_prop(request):
         return render(request,'houseadmin/reg_properties.html')  
  

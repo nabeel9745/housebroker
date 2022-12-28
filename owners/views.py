@@ -9,13 +9,13 @@ from django.http import JsonResponse
 
 # Create your views here.
 
-def home(request):
+def homes(request):
     return render(request,'owners/home.html')
 
 def navbar(request):
     return render(request,'owners/navbar.html')
 
-def login(request):
+def owners_login(request):
     error1=''
     error2=''
     if request.method =='POST':
@@ -36,7 +36,17 @@ def login(request):
 
  
 def account(request):
-    return render(request,'owners/account.html')
+    acc = request.session['owner_id']
+    dat = User_registration.objects.get(id=acc)
+    return render(request,'owners/account.html',{'sho':dat})
+
+def edit_account(request,id):
+    if request.method == 'POST':
+        o_name = request.POST['own_name']
+        o_email = request.POST['own_email']
+        o_phn = request.POST['own_phn']
+        User_registration.objects.filter(id=id).update(owner_name=o_name,owner_email=o_email,owner_phn=o_phn)
+        return redirect('account')
 
 def listed_prop(request):
     return render(request,'owners/listed_prop.html')
@@ -76,8 +86,6 @@ def welcome (request):
     naming = User_registration.objects.get(id=current_owner)
     return render(request,'owners/welcome_window.html',{'profil':naming})
 
-
-    
 
 
     

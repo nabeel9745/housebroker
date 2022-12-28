@@ -2,28 +2,36 @@
 {% load static %}
 {% block add %}
 <div class="container col-md-8">
-    <p class="mt-5"><em>your Listed properties are shown below</em></p>
+    <p class="mt-5"><em>approved Owners are shown below </em></p>
 <table id="my_p_table" class="table table-success table-striped">
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">username</th>
+            <th scope="col">Name</th>
             <th scope="col">email</th>
             <th scope="col">phone number</th>
-            <th scope="col">message</th>
             <th scope="col">Delete</th>
-
-
           </tr>
         </thead>
+        <tbody>
+ {% for k in view_owners %}
+ <form action="" method="post">
+  {% csrf_token %} 
+
+          <tr>
+            <th>{{k.id}}</th>
+            <th>{{k.owner_name}}</th>
+            <th>{{k.owner_email}}</th>
+            <th>{{k.owner_phn}}</th>
+        <th><a href="{% url 'delete_owners' k.id %}">Delete</a></th>
+          </tr>
+        </form>
+        {% endfor %}
+
+        </tbody>
+
        
       </table>
       </div>
-
-
-
-
-
-
-
 {% endblock %}
+

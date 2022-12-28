@@ -1,4 +1,4 @@
-from re import M
+# from re import M
 from unittest.util import _MAX_LENGTH
 from xml.parsers.expat import model
 from django.db import models
@@ -16,4 +16,4 @@ class User_registration(models.Model):
     owner_phn = models.BigIntegerField()
     owner_email =models.CharField(max_length=50)
     owner_password =models.CharField(max_length=50)
-    approved = models.CharField(max_length=100, default='not approved')
+    approved = models.CharField(max_length=80,default='not approved')
